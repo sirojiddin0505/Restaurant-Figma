@@ -18,4 +18,122 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+}
+.navbar__list{
+    display: flex;
+    gap: 40px;
+}
+.navbar__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 4%;  
+    color: rgba(255, 255, 255, 1);
+}
+.navbar__btn{
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 5%; 
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(187, 35, 57, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 100px;
+}
+/* -------header------ */
+.header{
+    background-color: rgba(187, 35, 57, 1);
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.header__left{
+    max-width: 500px;
+}
+.header__text{
+    font-family: Cera Round Pro;
+    font-weight: 700;
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 130%;
+    letter-spacing: 4%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);  
+}
+.header__title{
+    font-family: Cera Round Pro;
+    font-weight: 700;
+    font-size: clamp(30px, 5.5vw, 90px);
+    line-height: 130%;
+    letter-spacing: 4%; 
+    text-transform: capitalize;  
+    color: rgba(255, 255, 255, 1);   
+}
+.header__info{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 20px);
+    line-height: 175%;
+    letter-spacing: 4%; 
+    padding: 40px 0;  
+    color: rgba(255, 255, 255, 1);   
+    opacity: 70%;
+}
+.header__btn{
+    font-family: Cera Round Pro;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 4%;
+    padding: 8px 32px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 100px;  
+    background-color: rgba(187, 35, 57, 1);
+    color: rgba(255, 255, 255, 1);  
+}
+.header__img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* ------hero----- */
+.hero__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.hero__food{
+    text-align: center;
+}
+.hero__text{
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 18px;
+}
+.stars{
+    color: gold;
+}
+.hero__span{
+    color: rgba(193, 193, 193, 1);
+}
+
+
+
+@media only screen and (max-width:680px) {
+    .navbar__btn{
+        display: none;
+    }
+    .navbar__list{
+        display: none;
+    }
+    .header__container{
+        flex-direction: column;
+    }
+    .header__img{
+        padding: 20px;
+    }
 }
