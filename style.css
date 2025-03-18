@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Open Sans;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -56,6 +56,9 @@
 }
 .hum__menu{
     display: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 45px;
+    font-weight: bold;
 }
 /* -------header------ */
 .header{
@@ -65,13 +68,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 70px;
 }
 .header__left{
     max-width: 500px;
 }
 .header__text{
-    font-family: Cera Round Pro;
     font-weight: 700;
     font-size: clamp(14px, 2vw, 18px);
     line-height: 130%;
@@ -80,7 +82,6 @@
     color: rgba(255, 255, 255, 1);  
 }
 .header__title{
-    font-family: Cera Round Pro;
     font-weight: 700;
     font-size: clamp(35px, 5.5vw, 90px);
     line-height: 130%;
@@ -89,7 +90,6 @@
     color: rgba(255, 255, 255, 1);   
 }
 .header__info{
-    font-family: Open Sans;
     font-weight: 400;
     font-size: clamp(14px, 2vw, 20px);
     line-height: 175%;
@@ -99,7 +99,6 @@
     opacity: 70%;
 }
 .header__btn{
-    font-family: Cera Round Pro;
     font-weight: 700;
     font-size: 16px;
     line-height: 175%;
@@ -130,7 +129,6 @@
 }
 /* ------hero----- */
 .hero__title{
-    font-family: Cera Round Pro;
     font-weight: 500;
     font-size: 48px;
     text-transform: capitalize; 
@@ -145,22 +143,23 @@
 }
 .hero__food{
     text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(183, 177, 177);
 }
 .hero__img{
     width: 100%;
     height: auto;
 }
 .hero__text{
-    font-family: Open Sans;
     font-weight: 600;
     font-size: 16px;
     max-width: 250px;
 }
 .hero__info{
-    font-family: Open Sans;
     font-weight: 700;
     font-size: 24px;
     color: rgba(187, 35, 57, 1);
+    padding:30px 0;
 }
 .stars{
     color: gold;
@@ -169,13 +168,63 @@
 .hero__span{
     color: rgba(193, 193, 193, 1);
 }
+/* ---------main-------- */
+.main__title{
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 3%;
+    color: rgba(187, 35, 57, 1);
+    padding-top: 100px;
+}
+.main__buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    gap:20px;
+    padding: 50px 0;
+}
+.main__btn{
+    padding: 10px 30px;
+    border-radius: 100px;
+    border: 1px solid rgba(187, 35, 57, 1);
+    color: rgba(255, 255, 255, 1);
+    background-color:rgba(187, 35, 57, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 5%;
+}
+.main__btn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(187, 35, 57, 1);
+    border: 1px solid rgba(187, 35, 57, 1);
+    transition: all 0.7s;
+}
+.main__menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.main__food{
+    text-align: center;
+    border: 1px solid rgb(183, 177, 177);
+    border-radius: 8px;
+}
+.main__img{
+    padding: 10px 0;
+}
 
-
-
-@media only screen and (max-width:1120px) {
-    
+@media only screen and (max-width:915px) {
+    .main__menu, .hero__menu{
+        justify-content: space-around;
+    }
 }
 @media only screen and (max-width:720px) {
+    .hum__menu{
+        display: block;
+    }
     .navbar__btn{
         display: none;
     }
@@ -187,6 +236,13 @@
     }
     .header__img{
         padding: 20px;
+    }
+    .main__title{
+        font-size: 35px;
+        text-align: center;
+    }
+    .main__buttons{
+        justify-content: center;
     }
 }
 @media only screen and (max-width:580px){
