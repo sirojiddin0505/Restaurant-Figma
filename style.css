@@ -196,7 +196,7 @@
     line-height: 175%;
     letter-spacing: 5%;
 }
-.main__btn:hover{
+.main__btn:hover, .news__btn:hover{
     background-color: rgba(255, 255, 255, 1);
     color: rgba(187, 35, 57, 1);
     border: 1px solid rgba(187, 35, 57, 1);
@@ -229,7 +229,7 @@
     letter-spacing: 4%; 
     text-align: center;
 }
-.section__pic{
+.section__pic, .news__pic{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -263,8 +263,86 @@
     line-height: 22px;
     padding: 10px 0 20px 0;
 }
+/* -----news------ */
+.news__text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 4%;
+    color: rgba(36, 36, 36, 1);
+    text-align: center;
+    padding-top: 30px;
+}
+.news__title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 3%;
+    text-transform: capitalize;
+    text-align: center; padding: 10px 0;
+}
+.news__box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+}
+.boxB{
+    max-width: 300px;
+    border: 1px solid rgba(36, 36, 36, 0.1);
+    border-radius: 14px;
+}
+.news__img{
+    max-width: 100%;
+    border-radius: 14px;
+}
+.news__subtitle{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-transform: capitalize; 
+    color: rgba(36, 36, 36, 1);
+    max-width: 300px;
+    padding: 20px 10px;
+}
+.news__info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;    
+    color: rgba(170, 170, 170, 1);
+    max-width: 300px;
+    padding: 10px;
+}
+.news__span{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.news__link{
+    color: rgba(187, 35, 57, 1);
+}
+.news__btn{
+    padding: 8px 32px;
+    border: none;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: rgba(187, 35, 57, 1) ;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 4%;    
+}
+
+
 @media only screen and (max-width:1080px) {
-    .section__box{
+    .section__box, .news__box{
         justify-content: space-around;
     }
     
@@ -305,5 +383,11 @@
     }
     .hero__menu{
         justify-content: center;
+    }
+    .news__title, .section__title{
+        font-size: 30px;
+    }
+    .news__subtitle{
+        font-size: 20px;
     }
 } 
