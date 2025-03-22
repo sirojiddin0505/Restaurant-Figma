@@ -10,7 +10,7 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 2px 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .navbar{
     background-color: rgba(187, 35, 57, 1);
@@ -346,6 +346,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /* margin-bottom:200px ; */
 }
 .service__left{
     text-align: center;
@@ -373,12 +374,17 @@
     max-width: 25%;
 }
 /* ------newsletter----- */
-.newsletter__container{
+.newsletter__container {
     background-color: rgba(187, 35, 57, 1);
     max-width: 1200px;
-    margin: 0px 50px;
     text-align: center;
-    margin: 1px auto;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin: 0 auto; 
+    position: relative;
+    z-index: 10;
+    /* margin: 0 50px 0 50px; */
 }
 .newsletter__text{
     font-weight: 700;
@@ -400,12 +406,19 @@
     color: rgba(255, 255, 255, 1);
     padding: 20px 0;
 }
-input{
-    padding: 12px 300px 12px 16px;
+input {
+    width: 100%; 
+    max-width: 500px; 
+    min-width: 200px; 
+    padding: 12px 16px; 
     border-radius: 100px;
     border: 1px solid rgba(255, 255, 255, 1);
     background: transparent;
     color: rgba(255, 255, 255, 1);
+    box-sizing: border-box; 
+}
+.input:focus{
+    border: none;
 }
 .newsletter__btn{
     padding: 12px 32px;
@@ -413,13 +426,14 @@ input{
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 100px;
     color: rgba(255, 255, 255, 1);
+    margin-left: 10px;
 }
 /* -----footer------- */
 .footer{
     background-color: rgba(187, 35, 57, 1);
 }
 .footer__container{
-    padding: 150px 40px;
+    padding: 100px  40px 100px 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -531,6 +545,9 @@ input{
     .main__buttons{
         justify-content: center;
     }
+    .newsletter__btn{
+        margin-top: 20px;
+    }
 }
 @media only screen and (max-width:580px){
     .hero__title{
@@ -545,5 +562,11 @@ input{
     }
     .news__subtitle{
         font-size: 20px;
+    }
+    .newsletter__title{
+        font-size: 25px;
+    }
+    .input{
+        padding: 10px 00px 10px 10px ;
     }
 } 
